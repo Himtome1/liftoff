@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDoARfNzMqzrFSWXwENAcXDkIOn1bhELX0",
-    authDomain: "get-selected-ai.firebaseapp.com",
-    projectId: "get-selected-ai",
-    storageBucket: "get-selected-ai.appspot.com",
-    messagingSenderId: "101312811899",
-    appId: "1:101312811899:web:225379d09931028a94e3de",
-    measurementId: "G-Q2VLMCD6X7"
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.FIREBASE_APP_ID,
+    measurementId: process.env.FIREBASE_MEASUREMENT_ID
     };
     
     
